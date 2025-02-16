@@ -3,31 +3,31 @@
 import { useState } from "react";
 import useMasonry from "@/utils/useMasonry";
 import Image, { StaticImageData } from "next/image";
-import TestimonialImg01 from "@/public/images/testimonial-01.jpg";
-import TestimonialImg02 from "@/public/images/testimonial-02.jpg";
-import TestimonialImg03 from "@/public/images/testimonial-03.jpg";
-import TestimonialImg04 from "@/public/images/testimonial-04.jpg";
-import TestimonialImg05 from "@/public/images/testimonial-05.jpg";
-import TestimonialImg06 from "@/public/images/testimonial-06.jpg";
-import TestimonialImg07 from "@/public/images/testimonial-07.jpg";
-import TestimonialImg08 from "@/public/images/testimonial-08.jpg";
-import TestimonialImg09 from "@/public/images/testimonial-09.jpg";
+import TestimonialImg01 from "@/public/images/c1.png";
+import TestimonialImg02 from "@/public/images/c2.png";
+import TestimonialImg03 from "@/public/images/c3.png";
+import TestimonialImg04 from "@/public/images/c4.png";
+import TestimonialImg05 from "@/public/images/c5.png";
+import TestimonialImg06 from "@/public/images/c6.png";
+import TestimonialImg07 from "@/public/images/c7.png";
+import TestimonialImg08 from "@/public/images/c8.png";
+import TestimonialImg09 from "@/public/images/c9.png";
 import ClientImg01 from "@/public/images/tu1.png";
-import ClientImg02 from "@/public/images/client-logo-02.svg";
-import ClientImg03 from "@/public/images/client-logo-03.svg";
-import ClientImg04 from "@/public/images/client-logo-04.svg";
-import ClientImg05 from "@/public/images/client-logo-05.svg";
-import ClientImg06 from "@/public/images/client-logo-06.svg";
-import ClientImg07 from "@/public/images/client-logo-07.svg";
-import ClientImg08 from "@/public/images/client-logo-08.svg";
-import ClientImg09 from "@/public/images/client-logo-09.svg";
+import ClientImg02 from "@/public/images/tu2.png";
+import ClientImg03 from "@/public/images/tu3.png";
+import ClientImg04 from "@/public/images/tu4.png";
+import ClientImg05 from "@/public/images/tu5.png";
+import ClientImg06 from "@/public/images/tu4.png";
+import ClientImg07 from "@/public/images/tu4.png";
+import ClientImg08 from "@/public/images/tu6.png";
+import ClientImg09 from "@/public/images/tu7.png";
 
 const testimonials = [
   {
     img: TestimonialImg01,
     clientImg: ClientImg01,
-    name: "MaKayla P.",
-    company: "Disney",
+    name: "Saksham Jethwa",
+    company: "",
     content:
       "I had the privilege of using Germanywale to help me navigate the process of studying in Germany, and I couldn't be more pleased with the experience. The team at provided invaluable guidance on choosing the right university and program that aligned with my academic goals and career aspirations.",
     categories: [1, 3, 5],
@@ -35,8 +35,8 @@ const testimonials = [
   {
     img: TestimonialImg02,
     clientImg: ClientImg02,
-    name: "Andrew K.",
-    company: "Samsung",
+    name: "Kundan Prabhu",
+    company: "Masters in Computer Science",
     content:
       "Germanywale is so much better when compared to other organizations, they offer clear and hassle-free service with scholarship assistance. I have recommended it to a couple of my friends! Saurabh is excellent and kind. I’m glad I got him as my counselor.",
     categories: [1, 2, 4],
@@ -44,8 +44,8 @@ const testimonials = [
   {
     img: TestimonialImg03,
     clientImg: ClientImg03,
-    name: "Lucy D.",
-    company: "Rio",
+    name: "Cerun Alex Varkey",
+    company: "Masters in Material Science",
     content:
       "I am really glad I contacted Germanywale, they helped me clear all my doubts and confusion regarding my course, college selection, and application process. I am extremely happy with the services and would recommend Germanywale to anyone looking to secure an offer from their dream university",
     categories: [1, 2, 5],
@@ -53,8 +53,8 @@ const testimonials = [
   {
     img: TestimonialImg04,
     clientImg: ClientImg04,
-    name: "Pavel M.",
-    company: "Canon",
+    name: "Pratik Patel",
+    company: "Masters in Business Administrations",
     content:
       "Education in Germany was an alien idea to me and hence I was really confused about how to make the right choice  They guided me towards the right colleges for me, helped me to write my Statement of Intent, and likewise handled me every step of the way.",
     categories: [1, 4],
@@ -62,8 +62,8 @@ const testimonials = [
   {
     img: TestimonialImg05,
     clientImg: ClientImg05,
-    name: "Miriam E.",
-    company: "Cadbury",
+    name: "Bhavin Viththamani",
+    company: "Masters in Mechatronics",
     content:
       "I want to thank Germanywale for helping me to plan my studies in Germany. The structured approach adopted by them made the admission process very smooth and helped me make the right choices which would otherwise have been very difficult. I would especially like to thank my mentor who helped me a lot throughout the process",
     categories: [1, 3, 5],
@@ -71,8 +71,8 @@ const testimonials = [
   {
     img: TestimonialImg06,
     clientImg: ClientImg06,
-    name: "Eloise V.",
-    company: "Maffell",
+    name: "Akshay Halkude",
+    company: "Masters in Business Administration",
     content:
       "The kind of ownership my mentor and team at Germanywale had was immense. They were just as worried about my application as I was, that's pretty rare. I was managed uniquely and was given a customized approach. This experience will always be unparalleled, getting into HTW Berlin feels like fuzzy magic",
     categories: [1, 3],
@@ -80,8 +80,8 @@ const testimonials = [
   {
     img: TestimonialImg07,
     clientImg: ClientImg07,
-    name: "Pierre-Gilles L.",
-    company: "Binance",
+    name: "Pranay Khobragade",
+    company: "Masters in Business Administration and Engineering",
     content:
       "Thanks to the team, I was able to recognize what I want to do in life, believe in myself, and reach my dream university. The time and effort that the team invested helped me realize exactly why an MBA is important to me, and what is that I should take from it. This is what made the entire process  seamless and helped me depict my true story in my application",
     categories: [1, 2, 5],
@@ -89,8 +89,8 @@ const testimonials = [
   {
     img: TestimonialImg08,
     clientImg: ClientImg08,
-    name: "Danielle K.",
-    company: "Forbes Inc.",
+    name: "Santosh K Reddy",
+    company: "Masters in Mechatronics System",
     content:
       "I have been associated with Germanywale for a year now and their Mentors have helped me through all my difficulties in applying for a Master's in Germany. No matter how small or big my problem might be, my mentor was always available for me even at late hours as well as to help and guide me through a plethora of ways I might resolve my issues.",
     categories: [1, 4],
@@ -98,8 +98,8 @@ const testimonials = [
   {
     img: TestimonialImg09,
     clientImg: ClientImg09,
-    name: "Mary P.",
-    company: "Ray Ban",
+    name: "Likhitha Potturu",
+    company: "Masters in Simulation and System Design",
     content:
       "In my experience, Germanywale took the hassle out of the process of applying to universities in Germany and gave me an honest and critical opinion on my statement and supporting documents that helped me grab admits from prestigious universities. They are very patient and did bear with all sorts of questions and confusion that I came up with! ",
     categories: [1, 2],
@@ -118,7 +118,9 @@ export default function Testimonials() {
           <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
             Testimonial
           </h2>
-          <p className="text-lg text-indigo-200/65">What our Client Says </p>
+          <p className="bg-gradient-to-r from-[#E56D09] via-[#D83E13] to-[#D83E13] bg-clip-text text-transparent">
+            What our Client Says{" "}
+          </p>
         </div>
 
         <div>
@@ -280,21 +282,28 @@ export function Testimonial({
       }`}
     >
       <div className="flex flex-col gap-4">
-        <div>
-          <Image src={testimonial.clientImg} height={36} alt="Client logo" />
+        <div className="bg-white p-2 rounded-lg inline-flex">
+          {" "}
+          {/* Added white background */}{" "}
+          <Image
+            src={testimonial.clientImg}
+            height={68}
+            alt="Client logo"
+            className="object-contain" // Ensures the image fits well within the container
+          />
         </div>
-        <p className="text-indigo-200/65 before:content-['“'] after:content-['”']">
+        <p className="text-white before:content-['“'] after:content-['”']">
           {children}
         </p>
         <div className="flex items-center gap-3">
           <Image
             className="inline-flex shrink-0 rounded-full"
             src={testimonial.img}
-            width={36}
+            width={46}
             height={36}
             alt={testimonial.name}
           />
-          <div className="text-sm font-medium text-gray-200">
+          <div className="text-sm font-medium text-white">
             <span>{testimonial.name}</span>
             <span className="text-gray-700"> - </span>
             <a

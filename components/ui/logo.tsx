@@ -8,7 +8,7 @@ export default function Logo() {
       <Image
         src={logo}
         alt="Cruip Logo"
-        className="w-32 h-auto lg:w-64" // Responsive width and auto height
+        className="w-32 h-auto lg:w-52" // Responsive width and auto height
         priority // Ensures the logo is prioritized for loading
       />
     </Link>
